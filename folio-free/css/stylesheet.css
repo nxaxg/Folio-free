@@ -1,0 +1,177 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'bebas_neue';
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-header{
+    background: url(../img/header-back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.main-header:before{
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.main-header .row{
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+.red{
+    background-color: red;
+    height: 100px;
+}
+
+.main-title{
+    font-family: 'bebas_neuebold';
+    color: white;
+    text-transform: uppercase;
+    font-size: 6em;
+    top: 80px;
+    position: relative;
+}
+
+.main-subtitle{
+    color: white;
+    top: 50px;
+    position: relative;
+}
+
+header{
+    background-color: #252222;
+}
+
+.logo{
+    font-family: 'bebas_neuebold';
+    color: white;
+    font-size: 2em;
+}
+.main-nav{
+    padding: 10px 0;
+}
+
+.main-nav ul li{
+    margin-top: 10px;
+    margin-right: 15px;
+    padding: 20px 0;
+}
+
+.main-nav a{
+    color: white;
+    font-size: 1.5em;
+    padding:10px 5px;
+}
+
+.main-nav a:hover{
+    color: #65ba99;
+    text-decoration: none;
+    border-bottom: 1px solid #65ba99;
+}
+
+.icons-nav{
+    padding: 20px 0;
+    margin: 10px 0;
+}
+
+.icons-nav ul{
+    width: 100%;
+}
+
+.icons-nav li{
+    width: 19%;
+    float: left;
+    margin-right:2%;
+    padding: 2%;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 100%;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.icons-nav li:hover{
+    background-color: transparent;
+}
+
+.icons-nav li:hover .iconav{
+    color: white;
+}
+
+.icons-nav .iconav{
+    color: #252222;
+}
+
+.icons-nav li:last-child{
+    margin-right: 0;
+}
+
+/*content*/
+
+.content{
+    padding: 30px 0;
+}
+
+
+/*portfolio*/
+
+#portfolio{
+    background-color: #65ba99;
+    overflow: hidden;
+}
+
+.content-title{
+    text-transform: uppercase;
+    color: white;
+    font-size: 3em;
+    margin: 0;
+    font-family: 'bebas_neuebold';
+}
+
+.content-subtitle{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin: 0;
+}
+
+.img-container{
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.img-container figure{
+    overflow: hidden;
+    padding: 0;
+}
+
+.img-container figure img{
+    width: 100%;
+}
