@@ -118,11 +118,8 @@ header{
 }
 
 .icons-nav li:hover{
-    background-color: transparent;
-}
-
-.icons-nav li:hover .iconav{
-    color: white;
+    background-color: #65ba99;
+    border: 1px solid #65ba99;
 }
 
 .icons-nav .iconav{
@@ -167,11 +164,104 @@ header{
     overflow: hidden;
 }
 
-.img-container figure{
+.img-container .project{
     overflow: hidden;
     padding: 0;
+    position: relative;
+    cursor: pointer;
 }
 
 .img-container figure img{
     width: 100%;
+}
+
+.project figcaption{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(101, 186, 153, 0.5);
+    color: white;
+    font-size: 2em;
+    display: none;
+}
+
+.project:hover figcaption{
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.project figcaption .fg-icon{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.project figcaption .fg-icon:hover{
+    font-size: 1.2em;
+}
+
+/*col-lg-6*/
+.project.col-lg-6 figcaption{
+    padding: 40% 0;
+}
+
+.project.col-lg-6 figcaption .fg2{
+    width: 80%;
+    margin: 5% 10%;
+    overflow: hidden;
+}
+
+.project.col-lg-6 figcaption .fg2 .fg-icon{
+    width: 25%;
+    float: left;
+}
+
+/*col-lg-3*/
+.project.col-lg-3 figcaption{
+    padding: 50% 0;
+}
+
+.project.col-lg-3 figcaption .fg2{
+    width: 80%;
+    margin: 5% 10%;
+    overflow: hidden;
+}
+
+.project.col-lg-3 figcaption .fg2 .fg-icon{
+    width: 25%;
+    float: left;
+}
+
+/*testimonial*/
+
+#testimonial{
+    position: relative;
+    padding: 50px 0;
+    background:  url('../img/testimonial-back.jpg');
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+}
+
+.testimonial-text,
+.testimonial-who{
+    color: white;
+    font-family: 'bebas_neuebold';
+}
+
+.testimonial-who{
+    font-size: 2em;
+}
+
+/**/
+
+#news{
+    background-color: #a0a0a0;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+#news .content-title{
+    color: black;
 }
